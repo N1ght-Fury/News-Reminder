@@ -31,7 +31,7 @@ class News():
         elif (self.section == "Tasarım / İnovasyon"):
             section_link = "https://www.dunyahalleri.com/category/tasarim-inovasyon/"
             color = "13,58,91"
-        elif (self.section.title == "Kültür / Sanat"):
+        elif (self.section == "Kültür / Sanat"):
             section_link = "https://www.dunyahalleri.com/category/kultur-sanat/"
             color = "29,125,54"
 
