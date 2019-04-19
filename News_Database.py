@@ -47,7 +47,7 @@ class News():
         <div style="width: 375px; border: 4px solid black; background-color: rgb(237, 237, 237);">
             
             <div style="border-bottom:3px solid black;">
-                <a href='https://www.dunyahalleri.com/'><img  style="display: block; margin-left: auto; margin-right: auto; vertical-align:middle;" src='https://www.dunyahalleri.com/wp-content/uploads/2016/07/dh-logo-transparan.x57314.png' width="183px" height="90px"></a>
+                <a href='https://www.dunyahalleri.com/'><img  style="display: block; margin-left: auto; margin-right: auto; vertical-align:middle;" src='https://www.dunyahalleri.com/wp-content/uploads/2016/07/dh-logo-transparan.png' width="183px" height="90px"></a>
             </div>
             
             <div class="All Info" style="margin-top: 5px; text-decoration: none;">
