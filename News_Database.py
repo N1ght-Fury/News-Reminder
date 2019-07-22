@@ -52,24 +52,23 @@ class News():
             
             <div class="All Info" style="margin-top: 5px; text-decoration: none;">
                 
-                <div class="Image Div">
+                <div class="Image Div" style="margin-bottom: 3px;">
                     <a href='""" + self.link + """'><img style="display: block; margin-left: auto; margin-right: auto; vertical-align:middle;" src='""" + self.picture + """' width="295px" height="195px"></a>
         
                     
-                    
-                    
                     <div style="font: 18px/1.5 'Ubuntu', Arial, sans-serif;">
-                        <a href='""" + section_link + """' style="text-decoration: none;"><p style="background-color: rgb(""" + color + """); margin-top: 6px; padding-left: 40px; color:white;">""" + self.section + """</p></a>
+                        <a href='""" + section_link + """' style="text-decoration: none;"><p style="background-color: rgb(""" + color + """); margin-top: 6px; padding-left: 40px; color:white; margin-bottom: 3px;">""" + self.section + """</p></a>
                     </div>
         
                 </div>
         
-                <div class="Info Div">
-        
-                    <div style="margin-top: -8px; text-decoration: none; margin-left: 40px; width: 300px; font-family: 'Roboto Slab';"> 
+                <div class="Info Div" style="margin-top: 2px;">
+                    <div style="text-decoration: none; margin-left: 40px; width: 300px; font-family: 'Roboto Slab';"> 
                         <a href='""" + self.link + """' style="text-decoration: none; color: black; font: 20px/20px 'Contentia Bold'"><h3>""" + self.title + """</h3></a>
                     </div>
-        
+                    
+                    <div style="margin-bottom: 3px;"></div>
+
                     <div style="margin-top: -20px; margin-left: 40px; width: 300px; font: 14px/1.5 'Ubuntu', Arial, sans-serif;"">
                         <span>
                              """ + self.date + """&ensp; &ensp;
@@ -80,6 +79,8 @@ class News():
                         </span>
         
                     </div>
+
+                    <div style="margin-bottom: 5px;"></div>
         
                 </div>
         
@@ -130,6 +131,3 @@ class Database_Post():
         query = "insert into tbl_news values (@p1,@p2,@p3,@p4,@p5,@p6)"
         self.cursor.execute(query,(News.title,News.section,News.date,News.time_read,News.link,News.picture))
         self.connection.commit()
-
-
-
